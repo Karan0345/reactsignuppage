@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaFacebookSquare } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 function Two() {
-
+ 
   return (
+  
+    
     <div>
-        
-    <div className='w-full h-screen bg-zinc-900 flex justify-center items-center'>
-    <div className=' flex justify-center items-center h-[96] w-[20vw] bg-zinc-200 rounded-2xl'>
+    
+    <div className='w-full h-screen bg-zinc-900 flex justify-center items-center max-md:h-screen max-md:w-full'>
+    <div className=' flex justify-center items-center h-[96] w-[20vw] max-md:w-72 max-md:h-auto bg-zinc-200 rounded-2xl'>
      <form action="" method='POST' >
       <div className='flex justify-center items-center mt-4'>
         <h1 className='text-3xl font-extrabold text-red-500  uppercase '>Sign In</h1>
@@ -46,8 +48,11 @@ function Two() {
       </div>
      </form>
     </div>
+    </div> 
+
+   
     </div>
-    </div>
+
   )
 }
 
